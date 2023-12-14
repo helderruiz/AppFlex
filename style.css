@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.titulo {
+    text-align: center;
+    margin: 2rem 2rem 1rem 2rem;
+    font-size: 1.8rem;
+}
+
+div {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+#etanol, #gasolina {
+    text-align: center;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .7rem;
+}
+
+#etanol::placeholder{
+    text-align: center;
+}
+#gasolina::placeholder {
+    text-align: center;
+}
+
+#btnVantagem, #btnLimpar {
+    width: 30%;
+    padding: .5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 128, 0, 0.423);
+    font-weight: bold;
+}
+
+#btnLimpar{
+    background-color: rgba(165, 42, 42, 0.472);
+}
+
+footer{
+    text-align: center;
+    margin: 1rem;
+}
