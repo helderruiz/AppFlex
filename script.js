@@ -8,8 +8,8 @@ const botaoLimpar = document.querySelector('#btnLimpar')
 
 
 botaoVantegem.addEventListener('click', ()=> {
-    etanol = parseFloat(flex.etanol.value)
-    gasolina = parseFloat(flex.gasolina.value)
+    etanol = parseFloat(flex.etanol.value.replace(',','.'))
+    gasolina = parseFloat(flex.gasolina.value.replace(',',','))
 
     if(etanol < 0.7 * gasolina){
         imagem.setAttribute('src', 'img/etanol.png')
